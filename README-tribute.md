@@ -20,4 +20,4 @@ It is made using:
 
 ---
 
-See the page.
+[See the page](https://emarekica.github.io/tribute-page/).
