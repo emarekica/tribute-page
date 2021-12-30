@@ -168,18 +168,49 @@ footer {
   flex-direction: column;
 }
 
+/* figure > * {
+  float: left;
+  display: block;
+  width: 3em;
+}
+
 figcaption {
   display: block;
   justify-content: center;
   font-style: italic;
 
   margin: 0 0 2em 0;
+} */
+
+footer {
+  display: flex;
+  width: 85vw;
+  height: 100vh;
+  align-content: center;
+  margin-left: 10%;
+}
+
+figure {
+  margin: 0 auto;
+}
+
+figcaption {
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
 }
 
 #tribute-info {
-  display: block;
-  border-top: 0.1em solid white;
-  margin-bottom: 1em;
+  border-top: 0.1em solid rgba(129, 129, 129, 0.377);
+  margin: 2em 1em;
+  justify-content: center;
+}
+
+p#tribute-link {
+  justify-content: center;
 }
 
 a {
