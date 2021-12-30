@@ -113,11 +113,12 @@ table {
 /* --------- custom ---------  */
 
 body {
-  display: flex;
-
   background-image: url("img/chalk.jpg");
   background-repeat: repeat;
   background-size: 100%;
+
+  font-family: "Alegreya", serif;
+  color: white;
 }
 
 header {
@@ -134,11 +135,6 @@ header {
   letter-spacing: 0.5em;
 
   margin: 1em 1em;
-}
-
-#main {
-  font-family: "Alegreya", serif;
-  color: white;
 }
 
 .img-caption {
@@ -168,63 +164,32 @@ footer {
   flex-direction: column;
 }
 
-/* figure > * {
-  float: left;
-  display: block;
-  width: 3em;
-}
-
-figcaption {
-  display: block;
-  justify-content: center;
-  font-style: italic;
-
-  margin: 0 0 2em 0;
-} */
-
-footer {
-  display: flex;
-  width: 85vw;
-  height: 100vh;
-  align-content: center;
-  margin-left: 10%;
-}
-
 figure {
   margin: 0 auto;
 }
 
 figcaption {
-  justify-content: center;
   text-align: center;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
+  font-style: italic;
+  letter-spacing: 0.1em;
+
+  margin: 1em 0 3em 0;
 }
 
 #tribute-info {
   border-top: 0.1em solid rgba(129, 129, 129, 0.377);
-  margin: 2em 1em;
+  margin: 2em 2em;
   justify-content: center;
 }
 
 p#tribute-link {
   justify-content: center;
+  margin-top: 4em;
 }
 
 a {
   color: white;
   font-weight: 300;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-
-  border: 5px dotted red;
-  margin: 2em 2em;
-  padding: 2em 2em;
 }
 
 /* --------- img ---------  */
@@ -235,14 +200,17 @@ footer {
   align-items: center;
 
   max-width: 100vw;
-  margin: 2em 2em;
+  background-color: rgba(255, 255, 255, 0.068);
 }
 
 img {
   display: flex;
   flex-direction: column;
+
   box-shadow: 0 10px 18px 10px rgba(0, 0, 0, 0.19),
     0 6px 8px 6px rgba(0, 0, 0, 0.23);
+
+  margin: 2em 1em;
 }
 
 #main-img {
@@ -252,4 +220,8 @@ img {
 
 #baroque {
   max-width: 90vw;
+}
+
+figure img {
+  transform: translate(50%, 0);
 }
