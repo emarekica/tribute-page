@@ -18,6 +18,10 @@ It is made using:
 
 ## Mockup
 
+![desktop mockup](img/web-mockup.jpg)
+<br>
+<br>
+
 ---
 
 [See the page](https://emarekica.github.io/tribute-page/).
