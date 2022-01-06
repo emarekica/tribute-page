@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+/* --------- CSS reset ---------  */
+
 html,
 body,
 div,
@@ -127,6 +129,12 @@ header {
   justify-content: center;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+}
+/* --------- text ---------  */
+
 #title {
   display: inline-flex;
   justify-content: center;
@@ -135,6 +143,13 @@ header {
   letter-spacing: 0.5em;
 
   margin: 1em 1em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .img-caption {
@@ -157,23 +172,6 @@ p {
   margin: 2em 2em;
 
   font-size: 1.2em;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-}
-
-figure {
-  margin: 0 auto;
-}
-
-figcaption {
-  text-align: center;
-  font-style: italic;
-  letter-spacing: 0.1em;
-
-  margin: 1em 0 3em 0;
 }
 
 #tribute-info {
