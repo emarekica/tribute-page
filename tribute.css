@@ -133,6 +133,19 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
+.anchor::before {
+  content: "";
+  display: block;
+  height: 75px;
+  margin-top: -75px;
+  visibility: hidden;
+}
+
+.anchor::after {
+  visibility: visible;
+}
+
 /* --------- text ---------  */
 
 #title {
@@ -178,6 +191,8 @@ p {
   border-top: 0.1em solid rgba(129, 129, 129, 0.377);
   margin: 2em 2em;
   justify-content: center;
+
+  font-family: "Alegreya Sans";
 }
 
 p#tribute-link {
@@ -187,7 +202,7 @@ p#tribute-link {
 
 a {
   color: white;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* --------- img ---------  */
