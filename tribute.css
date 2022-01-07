@@ -207,6 +207,18 @@ a {
 
 /* --------- img ---------  */
 
+.anchor-icon {
+  position: absolute;
+  left: -15px;
+
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.anchor-icon:hoover {
+  opacity: 1;
+}
+
 .img-container {
   display: flex;
   flex-direction: column;
