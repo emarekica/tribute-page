@@ -215,6 +215,7 @@ p {
   font-weight: 30;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin: unset;
 }
 
 /* --------- header ---------  */
@@ -234,8 +235,8 @@ header {
   margin: unset;
 }
 
-p #main-img-caption {
-  margin: 0.3em 2em 2em 2em;
+p#main-img-caption {
+  margin: 2em 2em 2em 2em;
   font-weight: 500;
 }
 
@@ -243,6 +244,9 @@ p #main-img-caption {
 
 .early-years {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2em;
 
   justify-items: stretch;
   margin: 2em 2em;
@@ -250,6 +254,11 @@ p #main-img-caption {
 
 #early-img {
   max-width: 30vw;
+}
+
+li {
+  margin-left: 3em;
+  list-style-type: disc;
 }
 
 /* .early-years .img-container {
