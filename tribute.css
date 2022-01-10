@@ -153,27 +153,7 @@ img {
   align-items: center;
 }
 
-/* .anchor-icon {
-  position: absolute;
-  left: -15px;
-
-  opacity: 0;
-  transition: opacity 0.2s linear;
-}
-
-.anchor-icon:hoover {
-  opacity: 1;
-} */
-
 img.anchor-icon {
-  /* content: "";
-  display: block;
-  height: 75px;
-  margin-top: -75px;
-  visibility: hidden;
-  display: block;
-  left: -15px; */
-
   opacity: 0.3;
   box-shadow: none;
   margin: unset;
@@ -218,6 +198,12 @@ p {
   margin: unset;
 }
 
+.icon-header {
+  display: inline-flex;
+  max-height: auto;
+  overflow: hidden;
+}
+
 /* --------- header ---------  */
 
 header {
@@ -252,8 +238,19 @@ p#main-img-caption {
   margin: 2em 2em;
 }
 
+/* img */
 #early-img {
   max-width: 30vw;
+}
+
+div.img-container.early {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+/* txt */
+h2#early {
+  grid-row: 1 / 2;
 }
 
 li {
@@ -275,8 +272,12 @@ li {
   složiti po gridu, provjeri selektore
 } */
 
+/* img */
+/* txt */
+
 /* --------- fame ---------  */
 
+/* img */
 #fame-img {
   max-width: 70vw;
 }
@@ -285,8 +286,11 @@ li {
   složiti po gridu, provjeri selektore
 } */
 
+/* txt */
+
 /* --------- artist-present ---------  */
 
+/* img */
 #artist-img {
   max-width: 40vw;
 }
@@ -295,6 +299,7 @@ li {
   složiti po gridu, provjeri selektore
 } */
 
+/* txt */
 /* --------- footer ---------  */
 
 footer {
