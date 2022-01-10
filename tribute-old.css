@@ -115,8 +115,8 @@ table {
 /* --------- custom ---------  */
 
 body {
-  display: grid;
-  /* grid-template-columns: px;
+  /* display: grid;
+  grid-template-columns: px;
   grid-template-rows: px;
 
   grid-column-gap: px;
