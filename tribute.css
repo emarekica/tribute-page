@@ -1,3 +1,5 @@
+/* use SCSS for repeating code */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -180,6 +182,10 @@ h2 {
   text-transform: uppercase;
 }
 
+.section-header {
+  margin-top: 2em;
+}
+
 p {
   margin: 2em 2em;
   font-size: 1.2em;
@@ -245,10 +251,6 @@ div.img-container.early {
 }
 
 /* txt */
-
-h2#early {
-  grid-row: 1 / 2;
-}
 
 ul {
   grid-column: 1 / 4;
@@ -328,11 +330,12 @@ div.img-container.amsterdam {
   max-width: 70vw;
 }
 
-/* .fame .img-container {
-  složiti po gridu, provjeri selektore
-} */
-
 /* txt */
+.fame p:last-child {
+  padding-bottom: 4em;
+  margin: 0 2em;
+  border-bottom: 0.1px solid white;
+}
 
 /* --------- artist-present ---------  */
 
