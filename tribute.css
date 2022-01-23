@@ -277,21 +277,49 @@ li {
   justify-self: stretch;
   overflow: visible;
 
+  padding-bottom: 4em;
   margin: 0 2em;
+  border-bottom: 0.1px solid white;
 }
 
 /* --------- amsterdam-ulay ---------  */
+
+.amsterdam-ulay {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20em auto;
+
+  align-items: stretch;
+  margin: 2em 2em;
+}
 
 #amsterdam-img {
   max-width: 55vw;
 }
 
-/* .amsterdam-ulay .img-container {
-  složiti po gridu, provjeri selektore
-} */
-
 /* img */
+
+#amsterdam-img {
+  max-width: 50vw;
+}
+
+div.img-container.amsterdam {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
 /* txt */
+
+.amsterdam-ulay p:last-child {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+
+  padding-bottom: 4em;
+  margin: 0 2em;
+}
+
+#amsterdam-last {
+  border-bottom: 0.1px solid white;
+}
 
 /* --------- fame ---------  */
 
