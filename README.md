@@ -25,3 +25,12 @@ It is made using:
 ---
 
 [See the page](https://emarekica.github.io/tribute-page/).
+
+1. preraspodijeliti <p> prema tablet/mobile mockupu
+2. desktop: dodati liniju iznad prvog naslova
+3. povećati <p> font
+4. pokušati napraviti infinite pozadinu - gdje stati?
+5. SCSS - moduli
+6. Refaktorirati CSS kod.
+
+7. vidi: [setting the viewport](https://www.w3schools.com/css/css_rwd_viewport.asp)
