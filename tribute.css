@@ -169,10 +169,10 @@ h1 {
   display: inline-flex;
   text-align: center;
 
-  font-size: 4em;
+  font-size: 4.4em;
   letter-spacing: 0.5em;
 
-  margin: 1em 1em;
+  margin: 1.2em 0.5em 1.2em 0.5em;
 }
 
 h2 {
@@ -184,7 +184,7 @@ h2 {
 
 p {
   margin: 2em 2em;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-align: justify;
 }
 
@@ -221,8 +221,13 @@ header {
 }
 
 p#main-img-caption {
-  margin: 2em 2em 2em 2em;
+  font-size: 1.2em;
   font-weight: 500;
+
+  margin: 0 2em;
+  padding: 6em;
+
+  border-bottom: 0.1px solid white;
 }
 
 /* --------- early years ---------  */
