@@ -26,8 +26,9 @@ It is made using:
 
 [See the page](https://emarekica.github.io/tribute-page/).
 
-4. pokušati napraviti infinite pozadinu - gdje stati?
 5. SCSS - moduli
 6. Refaktorirati CSS kod.
 
 7. vidi: [setting the viewport](https://www.w3schools.com/css/css_rwd_viewport.asp)
+
+8. fotke - modal window kada se klikne na njih (promijeni i kursor u rukicu)
