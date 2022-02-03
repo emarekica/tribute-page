@@ -129,6 +129,7 @@ body {
 
 main {
   margin: 2em 2em;
+  padding-top: 3em;
 }
 
 section {
@@ -221,11 +222,11 @@ header {
 }
 
 p#main-img-caption {
-  font-size: 1.2em;
+  font-size: 1.05em;
   font-weight: 500;
 
   margin: 0 2em;
-  padding: 6em;
+  padding: 2em 1em 5em 1em;
 
   border-bottom: 0.1px solid white;
 }
@@ -262,12 +263,14 @@ ul {
   justify-self: stretch;
   overflow: visible;
 
-  margin: 7em 2em 2em;
+  margin: 5em 2em;
+  padding-top: 10em;
 }
 
 li {
   margin-left: 3em;
   list-style-type: disc;
+  font-size: 1.2em;
 }
 
 .early-years p:nth-child(2) {
