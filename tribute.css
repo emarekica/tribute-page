@@ -129,7 +129,6 @@ body {
 
 main {
   margin: 2em 2em;
-  padding-top: 3em;
 }
 
 section {
@@ -202,6 +201,8 @@ p {
   display: inline-flex;
   max-height: auto;
   overflow: hidden;
+
+  padding: 3em 0 0 2em;
 }
 
 /* --------- header ---------  */
@@ -263,8 +264,8 @@ ul {
   justify-self: stretch;
   overflow: visible;
 
-  margin: 5em 2em;
-  padding-top: 10em;
+  margin: 4em 2em;
+  padding-top: 7em;
 }
 
 li {
@@ -326,12 +327,16 @@ div.img-container.amsterdam {
 }
 /* txt */
 
+.amsterdam-ulay p:first-child {
+  margin: 2em 1em 2em 1em;
+}
+
 .amsterdam-ulay p:last-child {
   grid-column: 1 / 4;
   grid-row: 3 / 4;
 
   padding-bottom: 4em;
-  margin: 0 2em;
+  margin: 0 1em;
 }
 
 #amsterdam-last {
@@ -382,13 +387,11 @@ div.img-container.artist {
 
 /* txt */
 
-div.icon-header.fame {
-  padding-top: 3em;
-}
-
 .artist-present p:first-child {
   grid-column: 1 / 4;
   grid-row: 1 / 2;
+
+  margin: 1em 1em 2em 1em;
 }
 
 .artist-present p:nth-child(2) {

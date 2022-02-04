@@ -26,13 +26,13 @@ It is made using:
 
 [See the page](https://emarekica.github.io/tribute-page/).
 
-2. SCSS - moduli
-1. Refaktorirati CSS kod.
+- vidi: [setting the viewport](https://www.w3schools.com/css/css_rwd_viewport.asp)
 
-1. vidi: [setting the viewport](https://www.w3schools.com/css/css_rwd_viewport.asp)
+- poriktati naslove i ikonicu sa L početkom teksta
 
-1. fotke - modal window kada se klikne na njih (promijeni i kursor u rukicu)
+- SCSS - moduli
+- Refaktorirati CSS kod
 
-1. poriktati razmake (margin i padding) između crta i naslova - ujednačiti
+- poriktati naslove i ikonicu sa L početkom teksta
 
-1. poriktati naslove i ikonicu sa L početkom teksta
+- responzivnost
