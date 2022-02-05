@@ -1,10 +1,45 @@
+/* variables */
+
+$box-shadow: 0 10px 18px 10px rgba(0, 0, 0, 0.19),
+  0 6px 8px 6px rgba(0, 0, 0, 0.23);
+$separator: 0.1px solid white;
+$main-font: "Alegreya Sans", serif;
+$main-font-sans: "Alegreya Sans", sans-serif;
+
+/* mixins */
+
+@mixin image-caption {
+  font-family: $main-font-sans;
+  font-size: 0.8em;
+  font-weight: 30;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: unset;
+}
+
+@mixin grid-2-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20em auto;
+
+  align-items: stretch;
+  margin: 2em 2em;
+}
+
+@mixin grid-3-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* makes rows shrink follow content height */
+  grid-template-rows: auto;
+
+  align-items: stretch;
+  margin: 2em 2em;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 /* --------- CSS reset ---------  */
-
 html,
 body,
 div,
@@ -121,7 +156,7 @@ body {
   background-repeat: repeat-y;
   background-size: 100%;
 
-  font-family: "Alegreya", serif;
+  font-family: $main-font;
   color: white;
 }
 
@@ -136,8 +171,7 @@ section {
 /* img */
 
 img {
-  box-shadow: 0 10px 18px 10px rgba(0, 0, 0, 0.19),
-    0 6px 8px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: $box-shadow;
 
   width: 100%;
   margin: 2em 1em;
@@ -187,12 +221,7 @@ p {
 }
 
 .img-caption {
-  font-family: "Alegreya Sans", sans-serif;
-  font-size: 0.8em;
-  font-weight: 30;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin: unset;
+  @include image-caption();
 }
 
 .icon-header {
@@ -227,18 +256,13 @@ p#main-img-caption {
   margin: 0 2em;
   padding: 2em 1em 5em 1em;
 
-  border-bottom: 0.1px solid white;
+  border-bottom: $separator;
 }
 
 /* --------- early years ---------  */
 
 .early-years {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 20em auto;
-
-  align-items: stretch;
-  margin: 2em 2em;
+  @include grid-2-columns();
 }
 
 /* img */
@@ -293,18 +317,13 @@ li {
 
   padding-bottom: 4em;
   margin: 0 2em;
-  border-bottom: 0.1px solid white;
+  border-bottom: $separator;
 }
 
 /* --------- amsterdam-ulay ---------  */
 
 .amsterdam-ulay {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 20em auto;
-
-  align-items: stretch;
-  margin: 2em 2em;
+  @include grid-3-columns();
 }
 
 #amsterdam-img {
@@ -338,9 +357,8 @@ div.img-container.amsterdam {
 }
 
 #amsterdam-last {
-  border-bottom: 0.1px solid white;
+  border-bottom: $separator;
 }
-
 /* --------- fame ---------  */
 
 /* img */
@@ -358,19 +376,13 @@ div.img-container.amsterdam {
 #fame-last {
   padding-bottom: 4em;
   margin: 0 2em;
-  border-bottom: 0.1px solid white;
+  border-bottom: $separator;
 }
 
 /* --------- artist-present ---------  */
 
 .artist-present {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* makes rows shrink follow content height */
-  grid-template-rows: auto;
-
-  align-items: stretch;
-  margin: 2em 2em;
+  @include grid-3-columns();
 }
 
 /* img */
@@ -401,19 +413,14 @@ div.img-container.artist {
   grid-row: 4;
 
   padding-bottom: 4em;
-  border-bottom: 0.1px solid white;
+  border-bottom: $separator;
   margin: 2em 0 0 0;
 }
 
 /* --------- footer ---------  */
 
 footer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-
-  align-items: stretch;
-  margin: 2em 2em;
+  @include grid-2-columns();
 }
 
 /* img */
@@ -442,7 +449,7 @@ pre {
   grid-row: 4 / 5;
 
   margin-top: 6em;
-  border-top: 0.1px solid white;
+  border-top: $separator;
   padding-top: 2em;
 
   text-align: center;
