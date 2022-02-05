@@ -28,11 +28,7 @@ It is made using:
 
 - vidi: [setting the viewport](https://www.w3schools.com/css/css_rwd_viewport.asp)
 
-- poriktati naslove i ikonicu sa L početkom teksta
-
 - SCSS - moduli
 - Refaktorirati CSS kod
-
-- poriktati naslove i ikonicu sa L početkom teksta
 
 - responzivnost
