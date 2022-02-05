@@ -28,7 +28,5 @@ It is made using:
 
 - vidi: [setting the viewport](https://www.w3schools.com/css/css_rwd_viewport.asp)
 
-- SCSS - moduli
-- Refaktorirati CSS kod
-
-- responzivnost
+- refaktorirati CSS u SCSS
+- responzivnost - vidi što se mijenja u media queryjima, pa to uključi u SCSS
