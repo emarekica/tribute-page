@@ -209,6 +209,7 @@ h1 {
 
   font-size: 4.4em;
   letter-spacing: 0.5em;
+  line-height: 2em;
 
   margin: 1.2em 0.5em 1.2em 0.5em;
 }
@@ -259,6 +260,7 @@ p#main-img-caption {
   font-size: 1.05em;
   font-weight: 500;
   letter-spacing: 0.14em;
+  text-align: center;
 
   margin: 0 2em;
   padding: 2em 1em 5em 1em;
@@ -293,8 +295,8 @@ ul {
   justify-self: stretch;
   overflow: visible;
 
-  margin: 4em 2em;
-  padding-top: 7em;
+  margin: 2em 2em;
+  // padding-top: 4em;
 }
 
 li {
@@ -469,3 +471,24 @@ pre {
   text-decoration: none;
   font-weight: 700;
 }
+
+/* --------- MEDIA QUERIES ---------  */
+/* --------- medium desktop ---------  */
+// min-width 833 - max-width 1100 px
+
+/* --------- tablet ---------  */
+// iPad Pro 11'' 834 x 1194
+// max-width: 833px
+
+/* --------- mobile ---------  */
+// iPhone Pro Max 428 x 926
+// max width: 427px
+
+/* Svi uređaji širine manje od 1024px */
+
+// @media (max-width: 1023px) {
+//   section {
+//     flex: 0 49%;
+//     height: 48%;
+//   }
+// }

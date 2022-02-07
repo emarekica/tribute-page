@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* variables */
 /* mixins */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -177,6 +178,7 @@ h1 {
   text-align: center;
   font-size: 4.4em;
   letter-spacing: 0.5em;
+  line-height: 2em;
   margin: 1.2em 0.5em 1.2em 0.5em;
 }
 
@@ -237,6 +239,7 @@ p#main-img-caption {
   font-size: 1.05em;
   font-weight: 500;
   letter-spacing: 0.14em;
+  text-align: center;
   margin: 0 2em;
   padding: 2em 1em 5em 1em;
   border-bottom: 0.1px solid white;
@@ -282,8 +285,7 @@ ul {
   -ms-grid-column-align: stretch;
       justify-self: stretch;
   overflow: visible;
-  margin: 4em 2em;
-  padding-top: 7em;
+  margin: 2em 2em;
 }
 
 li {
@@ -511,4 +513,10 @@ pre {
   text-decoration: none;
   font-weight: 700;
 }
+
+/* --------- MEDIA QUERIES ---------  */
+/* --------- medium desktop ---------  */
+/* --------- tablet ---------  */
+/* --------- mobile ---------  */
+/* Svi uređaji širine manje od 1024px */
 /*# sourceMappingURL=abramovic.css.map */

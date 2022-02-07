@@ -170,6 +170,7 @@ h1 {
 
   font-size: 4.4em;
   letter-spacing: 0.5em;
+  line-height: 2em;
 
   margin: 1.2em 0.5em 1.2em 0.5em;
 }
@@ -225,6 +226,7 @@ p#main-img-caption {
   font-size: 1.05em;
   font-weight: 500;
   letter-spacing: 0.14em;
+  text-align: center;
 
   margin: 0 2em;
   padding: 2em 1em 5em 1em;
