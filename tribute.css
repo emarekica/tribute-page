@@ -123,6 +123,7 @@ body {
 
   font-family: "Alegreya", serif;
   color: white;
+  line-height: 2.2em;
 }
 
 main {
@@ -188,8 +189,8 @@ p {
 
 .img-caption {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: 0.8em;
-  font-weight: 30;
+  font-size: 1em;
+  font-weight: lighter;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: unset;
@@ -223,6 +224,7 @@ header {
 p#main-img-caption {
   font-size: 1.05em;
   font-weight: 500;
+  letter-spacing: 0.14em;
 
   margin: 0 2em;
   padding: 2em 1em 5em 1em;
@@ -292,7 +294,7 @@ li {
   overflow: visible;
 
   padding-bottom: 4em;
-  margin: 0 2em;
+  margin: 0 0;
   border-bottom: 0.1px solid white;
 }
 
@@ -370,7 +372,7 @@ div.img-container.amsterdam {
   grid-template-rows: auto;
 
   align-items: stretch;
-  margin: 2em 2em;
+  margin: 2em 2em 0 2em;
 }
 
 /* img */
@@ -413,7 +415,7 @@ footer {
   grid-template-rows: auto;
 
   align-items: stretch;
-  margin: 2em 2em;
+  margin: 0 2em;
 }
 
 /* img */
@@ -433,8 +435,10 @@ pre {
   padding-right: 1em;
 
   font-style: italic;
+  font-size: 1.5em;
+  letter-spacing: 0.02em;
+  line-height: 1.7em;
   text-align: center;
-  font-size: 1.3em;
 }
 
 .tribute-info {
@@ -445,6 +449,7 @@ pre {
   border-top: 0.1px solid white;
   padding-top: 2em;
 
+  font-family: "Alegreya Sans", sans-serif;
   text-align: center;
   font-size: 0.9em;
 }

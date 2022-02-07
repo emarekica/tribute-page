@@ -122,8 +122,9 @@ body {
   background-image: url("img/chalk-double.jpg");
   background-repeat: repeat-y;
   background-size: 100%;
-  font-family: "Alegreya Sans", serif;
+  font-family: Alegreya, serif;
   color: white;
+  line-height: 2.2em;
 }
 
 main {
@@ -193,9 +194,9 @@ p {
 }
 
 .img-caption {
-  font-family: "Alegreya Sans", sans-serif;
-  font-size: 0.8em;
-  font-weight: 30;
+  font-family: Alegreya Sans, sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: unset;
@@ -235,6 +236,7 @@ header {
 p#main-img-caption {
   font-size: 1.05em;
   font-weight: 500;
+  letter-spacing: 0.14em;
   margin: 0 2em;
   padding: 2em 1em 5em 1em;
   border-bottom: 0.1px solid white;
@@ -246,12 +248,12 @@ p#main-img-caption {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 20em auto;
-      grid-template-rows: 20em auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  margin: 2em 2em;
+  margin: 0 2em;
 }
 
 /* img */
@@ -317,7 +319,7 @@ li {
       justify-self: stretch;
   overflow: visible;
   padding-bottom: 4em;
-  margin: 0 2em;
+  margin: 0 0;
   border-bottom: 0.1px solid white;
 }
 
@@ -454,12 +456,12 @@ footer {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 20em auto;
-      grid-template-rows: 20em auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  margin: 2em 2em;
+  margin: 0 2em;
 }
 
 /* img */
@@ -484,8 +486,10 @@ pre {
       justify-self: center;
   padding-right: 1em;
   font-style: italic;
+  font-size: 1.5em;
+  letter-spacing: 0.02em;
+  line-height: 1.7em;
   text-align: center;
-  font-size: 1.3em;
 }
 
 .tribute-info {
@@ -498,6 +502,7 @@ pre {
   margin-top: 6em;
   border-top: 0.1px solid white;
   padding-top: 2em;
+  font-family: Alegreya Sans, sans-serif;
   text-align: center;
   font-size: 0.9em;
 }

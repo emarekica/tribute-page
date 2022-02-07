@@ -3,15 +3,15 @@
 $box-shadow: 0 10px 18px 10px rgba(0, 0, 0, 0.19),
   0 6px 8px 6px rgba(0, 0, 0, 0.23);
 $separator: 0.1px solid white;
-$main-font: "Alegreya Sans", serif;
-$main-font-sans: "Alegreya Sans", sans-serif;
+$main-font: Alegreya, serif;
+$main-font-sans: Alegreya Sans, sans-serif;
 
 /* mixins */
 
 @mixin image-caption {
   font-family: $main-font-sans;
-  font-size: 0.8em;
-  font-weight: 30;
+  font-size: 1em;
+  font-weight: lighter;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: unset;
@@ -20,10 +20,10 @@ $main-font-sans: "Alegreya Sans", sans-serif;
 @mixin grid-2-columns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 20em auto;
+  grid-template-rows: auto;
 
   align-items: stretch;
-  margin: 2em 2em;
+  margin: 0 2em;
 }
 
 @mixin grid-3-columns {
@@ -34,6 +34,11 @@ $main-font-sans: "Alegreya Sans", sans-serif;
 
   align-items: stretch;
   margin: 2em 2em;
+}
+
+@mixin padding-bottom {
+  padding-bottom: 4em;
+  margin: 0 2em;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -158,6 +163,7 @@ body {
 
   font-family: $main-font;
   color: white;
+  line-height: 2.2em;
 }
 
 main {
@@ -252,6 +258,7 @@ header {
 p#main-img-caption {
   font-size: 1.05em;
   font-weight: 500;
+  letter-spacing: 0.14em;
 
   margin: 0 2em;
   padding: 2em 1em 5em 1em;
@@ -316,7 +323,7 @@ li {
   overflow: visible;
 
   padding-bottom: 4em;
-  margin: 0 2em;
+  margin: 0 0;
   border-bottom: $separator;
 }
 
@@ -369,13 +376,12 @@ div.img-container.amsterdam {
 /* txt */
 
 .fame p:last-child {
-  padding-bottom: 4em;
-  margin: 0 2em;
+  @include padding-bottom();
 }
 
 #fame-last {
-  padding-bottom: 4em;
-  margin: 0 2em;
+  @include padding-bottom();
+
   border-bottom: $separator;
 }
 
@@ -440,8 +446,10 @@ pre {
   padding-right: 1em;
 
   font-style: italic;
+  font-size: 1.5em;
+  letter-spacing: 0.02em;
+  line-height: 1.7em;
   text-align: center;
-  font-size: 1.3em;
 }
 
 .tribute-info {
@@ -452,6 +460,7 @@ pre {
   border-top: $separator;
   padding-top: 2em;
 
+  font-family: $main-font-sans;
   text-align: center;
   font-size: 0.9em;
 }
