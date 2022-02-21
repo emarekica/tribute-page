@@ -73,3 +73,25 @@ Once you're done, submit the URL to your working project with all its tests pass
 <br>
 
 [Submit your test here](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
+
+<br><br>
+
+---
+
+**screen**: It is used to set the screen size of media query. The screen size can be set by using max-width and min-width. The screen size is differ from screen to screen.
+<br>
+
+**Syntax:**
+
+`@media screen and (max-width: width)`
+
+<br><br>
+
+**only screen:** The only keyword is used to prevent older browsers that do not support media queries with media features from applying the specified styles.
+<br>
+
+**Syntax:**
+
+`@media only screen and (max-widt`h: width)
+
+<br><br>

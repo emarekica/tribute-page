@@ -1,3 +1,5 @@
+/* --------- preprocessor stuff ---------  */
+
 /* variables */
 
 $box-shadow: 0 10px 18px 10px rgba(0, 0, 0, 0.19),
@@ -40,11 +42,14 @@ $main-font-sans: Alegreya Sans, sans-serif;
   padding-bottom: 4em;
   margin: 0 2em;
 }
+
+/* --------- CSS reset ---------  */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-/* --------- CSS reset ---------  */
+
 html,
 body,
 div,
@@ -217,7 +222,7 @@ h1 {
 h2 {
   font-size: 1.5em;
   font-weight: bold;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -479,6 +484,32 @@ pre {
 /* --------- tablet ---------  */
 // iPad Pro 11'' 834 x 1194
 // max-width: 833px
+
+@media screen and (min-width: 833px) and (max-width: 1100px) {
+  p#main-img-caption {
+    font-size: 1.5em;
+    line-height: 2.2em;
+
+    padding-bottom: 3em;
+  }
+
+  .icon-header {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 2em;
+  }
+
+  .early-years p {
+    grid-column: 1 / 4;
+  }
+}
+
+//   flex-basis: calc(
+//     50% - 2 * 16px
+//   ); /* moraš oduzeti marginu sa L i D strane da bi boksevi stali unutar containera roditelja */
+//   margin: 8px;
+// }
 
 /* --------- mobile ---------  */
 // iPhone Pro Max 428 x 926
