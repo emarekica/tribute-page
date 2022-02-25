@@ -36,6 +36,7 @@ $main-font-sans: Alegreya Sans, sans-serif;
 
   align-items: stretch;
   margin: 2em 2em;
+  padding: 0 3em;
 }
 
 @mixin padding-bottom {
@@ -220,7 +221,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2.5em;
   font-weight: bold;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -241,7 +242,8 @@ p {
   max-height: auto;
   overflow: hidden;
 
-  padding: 3em 0 0 2em;
+  margin: 3em 2em;
+  padding: 3em 0 0 3em;
 }
 
 /* --------- header ---------  */
@@ -286,9 +288,10 @@ p#main-img-caption {
 }
 
 div.img-container.early {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
 
+  margin-bottom: 4em;
   padding: 3em 0 0 2em;
 }
 
@@ -311,12 +314,12 @@ li {
 }
 
 .early-years p:nth-child(2) {
-  grid-column: 2 / span 2;
+  grid-column: 1 / 4;
   grid-row: 1;
   justify-self: stretch;
   overflow: visible;
 
-  padding-left: 2em;
+  padding-left: 1em;
 }
 
 .early-years .img-caption {
@@ -329,7 +332,7 @@ li {
   justify-self: stretch;
   overflow: visible;
 
-  padding-bottom: 4em;
+  padding: 2em 3em 5em;
   margin: 0 0;
   border-bottom: $separator;
 }
@@ -382,6 +385,11 @@ div.img-container.amsterdam {
 
 /* txt */
 
+.fame {
+  margin: 2em 2em;
+  padding: 0 2em;
+}
+
 .fame p:last-child {
   @include padding-bottom();
 }
@@ -427,10 +435,8 @@ div.img-container.artist {
 
   padding-bottom: 4em;
   border-bottom: $separator;
-  margin: 2em 0 0 0;
+  margin: 2em 0 0 1em;
 }
-
-/* --------- footer ---------  */
 
 footer {
   @include grid-2-columns();
@@ -467,9 +473,10 @@ pre {
   border-top: $separator;
   padding-top: 2em;
 
-  font-family: $main-font-sans;
+  font-family: $main-font;
   text-align: center;
   font-size: 0.9em;
+  letter-spacing: 0.08em;
 }
 
 #tribute-link {
@@ -485,23 +492,138 @@ pre {
 // iPad Pro 11'' 834 x 1194
 // max-width: 833px
 
-@media screen and (min-width: 833px) and (max-width: 1100px) {
-  p#main-img-caption {
-    font-size: 1.5em;
-    line-height: 2.2em;
+@media (max-width: 833px) {
+  /* --------- GENERAL ---------  */
 
-    padding-bottom: 3em;
+  h1 {
+    font-size: 3.5em;
+    letter-spacing: 0.3em;
+    line-height: 1.3em;
+
+    margin: 1.2em;
+  }
+
+  h2 {
+    font-size: 1.9em;
+  }
+
+  p {
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+  }
+
+  img-caption {
+    font-size: 0.9em;
   }
 
   .icon-header {
     display: flex;
     justify-content: center;
+    padding: 2em 1.5em 2em 2em;
+  }
+  /* --------- header ---------  */
 
-    padding-bottom: 2em;
+  p#main-img-caption {
+    font-size: 1em;
+    line-height: 2.2em;
+
+    margin-bottom: 1em;
+    padding: 2.3em 2em 4em 2.3em;
+  }
+
+  /* --------- early years ---------  */
+
+  .early-years {
+    grid-column: 1 / 3;
+    text-align: justify;
+
+    margin: 2em 2em;
   }
 
   .early-years p {
     grid-column: 1 / 4;
+  }
+
+  ul {
+    margin-top: 0;
+    margin-bottom: 4em;
+  }
+
+  li {
+    font-size: 1.1em;
+  }
+
+  .jebeni-paragraf {
+    padding-bottom: 4em;
+  }
+
+  /* --------- amsterdam-ulay ---------  */
+
+  .amsterdam-ulay {
+    display: flex;
+    flex-direction: column;
+
+    margin: 1em 2em 2em 2em;
+  }
+
+  .amsterdam-ulay p:first-child {
+    margin: 1em 1em 2em 1em;
+  }
+
+  .amsterdam-ulay p:last-child {
+    padding-bottom: 4em;
+  }
+
+  /* --------- fame ---------  */
+
+  .fame p:last-child {
+    padding-bottom: 4em;
+  }
+
+  /* --------- artist-present ---------  */
+
+  .artist-present p:first-child {
+    margin-top: 0;
+  }
+
+  .artist-present {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .artist-present p:first-child,
+  .artist-present p:nth-child(2) {
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+
+  .artist-present p:nth-child(5) {
+    margin-top: 0;
+  }
+
+  /* --------- footer ---------  */
+
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  pre {
+    font-size: 1.25em;
+    letter-spacing: 0.06em;
+    line-height: 40px;
+
+    block-size: fit-content;
+    inline-size: max-content;
+    margin: 0 5em 0 3.5em;
+    padding: 0;
+    // overflow: overlay;
+  }
+
+  #book {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    align-self: center;
   }
 }
 
@@ -515,11 +637,18 @@ pre {
 // iPhone Pro Max 428 x 926
 // max width: 427px
 
-/* Svi uređaji širine manje od 1024px */
+// @media screen and (max-width: 427px) {
+/* --------- GENERAL ---------  */
 
-// @media (max-width: 1023px) {
-//   section {
-//     flex: 0 49%;
-//     height: 48%;
-//   }
+/* --------- header ---------  */
+
+/* --------- early years ---------  */
+
+/* --------- amsterdam-ulay ---------  */
+
+/* --------- fame ---------  */
+
+/* --------- artist-present ---------  */
+
+/* --------- artist-present ---------  */
 // }

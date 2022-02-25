@@ -1,11 +1,11 @@
-@charset "UTF-8";
+/* --------- preprocessor stuff ---------  */
 /* variables */
 /* mixins */
+/* --------- CSS reset ---------  */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-/* --------- CSS reset ---------  */
 html,
 body,
 div,
@@ -185,7 +185,7 @@ h1 {
 h2 {
   font-size: 1.5em;
   font-weight: bold;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -452,7 +452,6 @@ div.img-container.artist {
   margin: 2em 0 0 0;
 }
 
-/* --------- footer ---------  */
 footer {
   display: -ms-grid;
   display: grid;
@@ -504,9 +503,10 @@ pre {
   margin-top: 6em;
   border-top: 0.1px solid white;
   padding-top: 2em;
-  font-family: Alegreya Sans, sans-serif;
+  font-family: Alegreya, serif;
   text-align: center;
   font-size: 0.9em;
+  letter-spacing: 0.08em;
 }
 
 #tribute-link {
@@ -517,6 +517,137 @@ pre {
 /* --------- MEDIA QUERIES ---------  */
 /* --------- medium desktop ---------  */
 /* --------- tablet ---------  */
+@media (max-width: 833px) {
+  /* --------- GENERAL ---------  */
+  h1 {
+    font-size: 3.5em;
+    letter-spacing: 0.3em;
+    line-height: 1.3em;
+    margin: 1.2em;
+  }
+  h2 {
+    font-size: 1.9em;
+  }
+  p {
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+  }
+  img-caption {
+    font-size: 0.9em;
+  }
+  /* --------- header ---------  */
+  p#main-img-caption {
+    font-size: 1em;
+    line-height: 2.2em;
+    padding: 2.3em 2em 3em 2.3em;
+  }
+  .icon-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 2em;
+  }
+  /* --------- early years ---------  */
+  .early-years {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    text-align: justify;
+    margin: 2em 2em;
+  }
+  .early-years p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+  }
+  ul {
+    margin-top: 0;
+    margin-bottom: 4em;
+  }
+  li {
+    font-size: 1.1em;
+  }
+  /* --------- amsterdam-ulay ---------  */
+  .amsterdam-ulay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2em 2em;
+  }
+  /* --------- fame ---------  */
+  .fame p:last-child {
+    padding-bottom: 2em;
+  }
+  /* --------- artist-present ---------  */
+  .artist-present p:first-child {
+    margin-top: 0;
+  }
+  .artist-present {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .artist-present p:first-child,
+  .artist-present p:nth-child(2) {
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  .artist-present p:nth-child(5) {
+    margin-top: 0;
+  }
+  /* --------- footer ---------  */
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  pre {
+    font-size: 1.25em;
+    letter-spacing: 0.06em;
+    line-height: 40px;
+    block-size: -webkit-fit-content;
+    block-size: -moz-fit-content;
+    block-size: fit-content;
+    inline-size: -webkit-max-content;
+    inline-size: -moz-max-content;
+    inline-size: max-content;
+    margin: 0 5em 0 3.5em;
+    padding: 0;
+  }
+  #book {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 /* --------- mobile ---------  */
-/* Svi uređaji širine manje od 1024px */
+/* --------- GENERAL ---------  */
+/* --------- header ---------  */
+/* --------- early years ---------  */
+/* --------- amsterdam-ulay ---------  */
+/* --------- fame ---------  */
+/* --------- artist-present ---------  */
+/* --------- artist-present ---------  */
 /*# sourceMappingURL=abramovic.css.map */
