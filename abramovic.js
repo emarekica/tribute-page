@@ -1,11 +1,17 @@
 "use strict";
 
-//// 1.
-// select the elements you need
-// store the selections into variables
-// use them repeatedly
+//// images need a container
+// all my images container have a class .img-container (4)
 
-//// 2.
-// work with existing HTML classes
-// write classess you will use from HTML
-// event handler onClick triggers show/hide of modal windows = photos
+//// into that container add another container with CSS: {overflow: hidden} so it doesn't get out of the grid
+// I will use the same container
+
+//// add data-* custom attribute
+// data-original="rythm-0-performance" etc.
+
+//// add <div class="modal"> in HTML
+// add <img class="modal-img"/>
+// add <p> with class="caption"
+
+// source: https://www.youtube.com/watch?v=4SQXOA8Z-lo
+// 15:43

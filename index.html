@@ -28,6 +28,7 @@
         src="img/marina.jpg"
         alt="Close-up portrait of Marina Abramovic"
         id="main-img"
+        class="modal"
       />
       <br />
 
@@ -47,7 +48,7 @@
           accesskey="e"
           tabindex="0"
         >
-          <img src="img/link-icon.png" class="anchor-icon" />
+          <img src="img/link-icon.png" class="anchor-icon modal" />
         </a>
         <h2 class="section-header" id="early">Early years</h2>
       </div>
@@ -57,7 +58,9 @@
           <img
             src="img/abramovic-3.jpeg"
             alt="Two photos of Rythm 0 performance by Marina Abramović"
+            data-original="rythm-0-performance"
             id="early-img"
+            class="modal"
           />
           <p class="img-caption">Rythm 0 performance</p>
         </div>
@@ -107,7 +110,7 @@
           accesskey="a"
           tabindex="1"
         >
-          <img src="img/link-icon.png" class="anchor-icon" />
+          <img src="img/link-icon.png" class="anchor-icon modal" />
         </a>
         <h2 class="section-header" id="amsterdam">Amsterdam and Ulay</h2>
       </div>
@@ -127,7 +130,9 @@
           <img
             src="img/abramovic-china.jpeg"
             alt="Abramovic on Big China Wall"
+            data-original="wall-of-china"
             id="amsterdam-img"
+            class="modal"
           />
           <p class="img-caption">Abramovic on Big China Wall</p>
         </div>
@@ -150,7 +155,7 @@
           accesskey="f"
           tabindex="2"
         >
-          <img src="img/link-icon.png" class="anchor-icon"
+          <img src="img/link-icon.png" class="anchor-icon modal"
         /></a>
         <h2 class="section-header" id="fame">Fame</h2>
       </div>
@@ -167,7 +172,9 @@
           <img
             src="img/balkan-baroque.png"
             alt="Balkan baroque performance"
+            data-original="balkan-baroque"
             id="fame-img"
+            class="modal"
           />
           <p class="img-caption">Balkan baroque performance</p>
         </div>
@@ -189,7 +196,7 @@
           accesskey="p"
           tabindex="3"
         >
-          <img src="img/link-icon.png" class="anchor-icon" />
+          <img src="img/link-icon.png" class="anchor-icon modal" />
         </a>
         <h2 class="section-header" id="artist">The Artist is Present</h2>
       </div>
@@ -222,7 +229,9 @@
           <img
             src="img/artist-is-present.jpeg"
             alt="Artist is present performance photo"
+            data-original="artist-is-present"
             id="artist-img"
+            class="modal"
           />
           <p class="img-caption artist">Artist is present</p>
         </div>
@@ -246,6 +255,7 @@
         id="book"
         src="img/abramovic-book.jpeg"
         alt="Walk through walls book"
+        class="modal"
       />
       <br />
 
@@ -265,6 +275,12 @@
         Marina Abramović</a
       >&nbsp; 2021.
     </p>
+
+    <!-- modal for imgs -->
+    <div class="modal">
+      <img src="" alt="" class="modal-img" />
+      <p class="caption"></p>
+    </div>
 
     <script src="abramovic.js"></script>
   </body>
