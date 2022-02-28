@@ -81,17 +81,6 @@ Once you're done, submit the URL to your working project with all its tests pass
 **screen**: It is used to set the screen size of media query. The screen size can be set by using max-width and min-width. The screen size is differ from screen to screen.
 <br>
 
-**Syntax:**
-
-`@media screen and (max-width: width)`
-
-<br><br>
-
-**only screen:** The only keyword is used to prevent older browsers that do not support media queries with media features from applying the specified styles.
-<br>
-
-**Syntax:**
-
-`@media only screen and (max-widt`h: width)
+[Source for **modal img**](// source: https://www.youtube.com/watch?v=4SQXOA8Z-lo)
 
 <br><br>
