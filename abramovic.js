@@ -11,14 +11,12 @@ previews.forEach((preview) => {
   // event listener
   preview.addEventListener("click", () => {
     modal.classList.add("open");
-    console.log(preview);
 
     // animation
     original.classList.add("original");
 
     // dyanmical change of img & txt
     const originalSrc = preview.getAttribute("data-original");
-    console.log(originalSrc);
     // original.src = `${originalSrc}`;
     original.src = originalSrc;
 

@@ -676,7 +676,7 @@ pre {
 /* --------- artist-present ---------  */
 /* ------------------ MODAL ------------------  */
 .modal {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
   pointer-events: none;
   position: fixed;
@@ -712,7 +712,8 @@ img {
 
 .modal-img {
   position: absolute;
-  height: 100%;
+  height: auto;
+  width: 150%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0.5);
@@ -723,8 +724,8 @@ img {
 
 /* when clicked */
 .modal-img.open {
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1.5);
+          transform: translate(-50%, -50%) scale(1.5);
 }
 
 /* ---------- txt ---------- */
@@ -732,6 +733,7 @@ img {
   color: white;
   font-size: 1.5rem;
   font-family: Alegreya Sans, sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 5%;
   left: 50%;
