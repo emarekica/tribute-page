@@ -26,8 +26,3 @@ It is made using:
 ---
 
 [See the page](https://emarekica.github.io/tribute-page/).
-
-- vidi: [setting the viewport](https://www.w3schools.com/css/css_rwd_viewport.asp)
-
-- refaktorirati CSS u SCSS
-- responzivnost - vidi što se mijenja u media queryjima, pa to uključi u SCSS
