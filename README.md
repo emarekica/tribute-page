@@ -9,6 +9,7 @@ It is made using:
 - CSS3
 - CSS flex-box
 - CSS flex-grid
+- SCSS
 - Responsive web design principles
 - Applied accessibility
 - Applied visual design
