@@ -1,4 +1,5 @@
 .DS_Store
+.gitattributes
 
 abramovic.code-workspace
 tribute-old.css
