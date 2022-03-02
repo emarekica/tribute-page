@@ -674,7 +674,7 @@ pre {
 /* --------- fame ---------  */
 /* --------- artist-present ---------  */
 /* --------- artist-present ---------  */
-/* ------------------ for modal windows / photos ------------------  */
+/* ------------------ MODAL ------------------  */
 .modal {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
@@ -714,12 +714,13 @@ img {
   height: 100%;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) sale(0.5);
-          transform: translate(-50%, -50%) sale(0.5);
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+          transform: translate(-50%, -50%) scale(0.5);
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
 
+/* when clicked */
 .modal-img.open {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);

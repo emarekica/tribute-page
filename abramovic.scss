@@ -660,7 +660,7 @@ pre {
 /* --------- artist-present ---------  */
 // }
 
-/* ------------------ for modal windows / photos ------------------  */
+/* ------------------ MODAL ------------------  */
 
 .modal {
   background-color: rgba(0, 0, 0, 0.5);
@@ -702,11 +702,11 @@ img {
   height: 100%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) sale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
   transition: all 0.25s ease-out;
 }
 
-//* when clicked */
+/* when clicked */
 .modal-img.open {
   transform: translate(-50%, -50%) scale(1);
 }
