@@ -102,10 +102,6 @@ modal.addEventListener("click", (e) => {
 
 <br><br>
 
----
-
-<br><br>
-
 ## CSS
 
 ---
@@ -131,9 +127,11 @@ It will be used for openi the img by clicking on it and closing it by clicking o
 }
 ```
 
-<br>
+<br><br>
 
 ---
+
+<br>
 
 ### **Performance consideration**
 
@@ -142,7 +140,7 @@ It will be used for openi the img by clicking on it and closing it by clicking o
 When you have multiple elements and you like to put a click handler or any type of event, it is better if you delegate that to an upper parent/container element.
 Then if there are 100 images it will not put 100 click handlers but only 1 event.target can be used to decide if the handler logic should proceed or cancel.
 
-<br><br>
+<br>
 
 ### **Source**
 
