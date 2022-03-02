@@ -42,8 +42,6 @@ alt = "Artist is present performance";
 
 ## JS
 
----
-
 <br>
 
 Select DOM elements:
@@ -103,8 +101,6 @@ modal.addEventListener("click", (e) => {
 <br><br>
 
 ## CSS
-
----
 
 <br>
 
