@@ -12,8 +12,6 @@
 
 ## Definition
 
----
-
 <br>
 
 **SASS** _(Syntactically Awesome Style Sheets)_ is a pre-processor scripting language that will be compiled or interpreted into CSS.
@@ -25,8 +23,6 @@ SassScript is itself a **scripting language**.
 <br>
 
 ## Syntax
-
----
 
 <br>
 
