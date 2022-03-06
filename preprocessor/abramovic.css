@@ -120,7 +120,7 @@ table {
 /* --------- GENERAL ---------  */
 /* MBP 16': 1728 x 1112px */
 body {
-  background-image: url("../img/chalk-double.png");
+  background-image: url("../img/chalk-double.jpg");
   background-repeat: repeat-y;
   background-size: 100%;
   font-family: Alegreya, serif;
@@ -138,10 +138,8 @@ section {
 
 /* img */
 img {
-  -webkit-box-shadow: 0 10px 18px 10px rgba(0, 0, 0, 0.19),
-    0 6px 8px 6px rgba(0, 0, 0, 0.23);
-  box-shadow: 0 10px 18px 10px rgba(0, 0, 0, 0.19),
-    0 6px 8px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 10px 18px 10px rgba(0, 0, 0, 0.19), 0 6px 8px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 18px 10px rgba(0, 0, 0, 0.19), 0 6px 8px 6px rgba(0, 0, 0, 0.23);
   width: 100%;
   margin: 2em 1em;
 }
@@ -152,17 +150,17 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 img.anchor-icon {
   opacity: 0.3;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   margin: unset;
   max-width: 1.5em;
 }
@@ -223,11 +221,11 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 100vw;
   margin: unset;
 }
@@ -252,13 +250,13 @@ p#main-img-caption {
 .early-years {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [2];
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: auto;
-  grid-template-rows: auto;
+      grid-template-rows: auto;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   margin: 0 2em;
 }
 
@@ -287,7 +285,7 @@ ul {
   -ms-grid-row: 3;
   grid-row: 3;
   -ms-grid-column-align: stretch;
-  justify-self: stretch;
+      justify-self: stretch;
   overflow: visible;
   margin: 2em 2em;
 }
@@ -305,7 +303,7 @@ li {
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column-align: stretch;
-  justify-self: stretch;
+      justify-self: stretch;
   overflow: visible;
   padding-left: 1em;
 }
@@ -322,7 +320,7 @@ li {
   -ms-grid-row-span: 1;
   grid-row: 4 / 5;
   -ms-grid-column-align: stretch;
-  justify-self: stretch;
+      justify-self: stretch;
   overflow: visible;
   padding: 2em 3em 5em;
   margin: 0 0;
@@ -333,14 +331,14 @@ li {
 .amsterdam-ulay {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [3];
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   /* makes rows shrink follow content height */
   -ms-grid-rows: auto;
-  grid-template-rows: auto;
+      grid-template-rows: auto;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   margin: 2em 2em;
   padding: 0 3em;
 }
@@ -411,14 +409,14 @@ div.img-container.amsterdam {
 .artist-present {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [3];
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   /* makes rows shrink follow content height */
   -ms-grid-rows: auto;
-  grid-template-rows: auto;
+      grid-template-rows: auto;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   margin: 2em 2em;
   padding: 0 3em;
 }
@@ -466,13 +464,13 @@ div.img-container.artist {
 footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [2];
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: auto;
-  grid-template-rows: auto;
+      grid-template-rows: auto;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   margin: 0 2em;
 }
 
@@ -486,12 +484,12 @@ footer {
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
 }
 
 #book:hover {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /* txt */
@@ -500,7 +498,7 @@ pre {
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
   padding-right: 1em;
   font-style: italic;
   font-size: 1.5em;
@@ -556,8 +554,8 @@ pre {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 2em 1.5em 2em 2em;
   }
   /* --------- header ---------  */
@@ -597,8 +595,8 @@ pre {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 1em 2em 2em 2em;
   }
   .amsterdam-ulay p:first-child {
@@ -621,8 +619,8 @@ pre {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .artist-present p:first-child,
   .artist-present p:nth-child(2) {
@@ -639,8 +637,8 @@ pre {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   pre {
     font-size: 1.25em;
@@ -663,83 +661,112 @@ pre {
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
 /* --------- mobile ---------  */
-/* --------- GENERAL ---------  */
-/* --------- header ---------  */
-/* --------- early years ---------  */
-/* --------- amsterdam-ulay ---------  */
-/* --------- fame ---------  */
-/* --------- artist-present ---------  */
-/* --------- artist-present ---------  */
-/* ------------------ MODAL ------------------  */
-.modal {
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  pointer-events: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: 0.25s ease-out;
-  transition: 0.25s ease-out;
-}
-
-/* when clicked */
-.modal.open {
-  opacity: 1;
-  pointer-events: all;
-}
-
-/* ---------- img ---------- */
-img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  cursor: pointer;
-}
-
-.img-container img:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-transition: 0.25s ease-out;
-  transition: 0.25s ease-out;
-}
-
-.modal-img {
-  position: absolute;
-  height: auto;
-  width: 150%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0.5);
-  transform: translate(-50%, -50%) scale(0.5);
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
-}
-
-/* when clicked */
-.modal-img.open {
-  -webkit-transform: translate(-50%, -50%) scale(1.5);
-  transform: translate(-50%, -50%) scale(1.5);
-}
-
-/* ---------- txt ---------- */
-.caption {
-  color: white;
-  font-size: 1.5rem;
-  font-family: Alegreya Sans, sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -5%);
-  transform: translate(-50%, -5%);
+@media screen and (max-width: 427px) {
+  /* --------- GENERAL ---------  */
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.4em;
+    padding-left: 1em;
+  }
+  p {
+    margin: 2em 0.5em;
+  }
+  .icon-header {
+    padding: 0.8em 1.5em 0 0.5em;
+    margin-bottom: 0.5em;
+  }
+  #main-img {
+    width: auto;
+  }
+  img.anchor-icon {
+    height: auto;
+    padding-top: 0.4em;
+  }
+  /* --------- header ---------  */
+  header {
+    font-size: 0.9em;
+    line-height: 2.1em;
+  }
+  /* --------- early years ---------  */
+  .early-years {
+    margin: 0;
+  }
+  .early-years p:nth-child(2) {
+    font-size: 1.15em;
+    line-height: 1.7em;
+    letter-spacing: 0.03em;
+  }
+  /* --------- amsterdam-ulay ---------  */
+  /* --------- fame ---------  */
+  /* --------- artist-present ---------  */
+  /* --------- artist-present ---------  */
+  /* ------------------ MODAL ------------------  */
+  .modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.25s ease-out;
+    transition: 0.25s ease-out;
+  }
+  /* when clicked */
+  .modal.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+  /* ---------- img ---------- */
+  img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    cursor: pointer;
+  }
+  .img-container img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.25s ease-out;
+    transition: 0.25s ease-out;
+  }
+  .modal-img {
+    position: absolute;
+    height: auto;
+    width: 150%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  /* when clicked */
+  .modal-img.open {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
+  }
+  /* ---------- txt ---------- */
+  .caption {
+    color: white;
+    font-size: 1.5rem;
+    font-family: Alegreya Sans, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -5%);
+            transform: translate(-50%, -5%);
+  }
 }
 /*# sourceMappingURL=abramovic.css.map */
