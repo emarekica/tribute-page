@@ -705,13 +705,29 @@ img {
 //   margin: 8px;
 // }
 
+/* --------- between mobile & tablet ---------  */
+
+// 428px - 832px
+
+// @media (max-width: 832px) {}
+
 /* --------- mobile ---------  */
 
 // iPhone Pro Max 428 x 926
 // max width: 427px
 
-@media screen and (max-width: 427px) {
+@media (max-width: 427px) {
   /* --------- GENERAL ---------  */
+
+  // removes horizontal scrollbars
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  main {
+    margin-bottom: 0;
+  }
 
   h1 {
     font-size: 2em;
@@ -723,7 +739,7 @@ img {
   }
 
   p {
-    margin: 2em 0.5em;
+    margin: 2em 1em;
 
     font-size: 1.15em;
     line-height: 1.7em;
@@ -733,6 +749,10 @@ img {
   .icon-header {
     padding: 0.8em 1.5em 0 2em;
     margin-bottom: 0.5em;
+  }
+
+  .img-caption {
+    font-size: smaller;
   }
 
   #main-img {
@@ -757,11 +777,16 @@ img {
     margin: 0;
   }
 
+  .img-container.early .img-caption {
+    font-size: smaller;
+  }
+
   .early-years p:nth-child(2),
   .jebeni-paragraf {
     font-size: 1.15em;
     line-height: 1.7em;
     letter-spacing: 0.03em;
+    padding-left: 0;
   }
 
   li {
@@ -775,11 +800,39 @@ img {
     padding: 0 0 4em 0;
   }
 
+  div.img-container.early {
+    padding: 3em 0;
+    margin-bottom: 1em;
+  }
+
+  #early-img {
+    max-width: fit-content;
+  }
+
   /* --------- amsterdam-ulay ---------  */
 
   .amsterdam-ulay {
     padding: 0;
     margin: 0;
+  }
+
+  .amsterdam-icon {
+    text-align: center;
+    padding-left: 1em;
+    margin: 1em 0 1.5em 1em;
+  }
+
+  #amsterdam-header {
+    padding-left: 0;
+    padding-right: 1em;
+  }
+
+  a.icon-header {
+    width: stretch;
+  }
+
+  #amsterdam-img {
+    max-width: fit-content;
   }
 
   /* --------- fame ---------  */
@@ -789,16 +842,67 @@ img {
     margin: 0;
   }
 
+  .fame-icon {
+    padding-left: 0;
+    margin: 1em 0 1.5em 0;
+  }
+
   #fame-last {
-    margin: 0 0.5em;
+    margin: 0 1em;
+  }
+
+  .fame p:last-child {
+    padding-bottom: 2em;
+  }
+
+  #fame-img {
+    max-width: fit-content;
   }
 
   /* --------- artist-present ---------  */
 
   .artist-present {
-    padding: 2em 0 0 0;
-    margin: 0 0.5em;
+    margin: 0;
+    padding: 0;
   }
 
-  /* --------- artist-present ---------  */
+  .artist-icon {
+    padding-left: 1em;
+    margin: 2em 2em;
+  }
+
+  .artist-present p:first-child {
+    margin: 1em 1em;
+    padding-bottom: 1em;
+  }
+  .artist-present p:nth-child(2),
+  .artist-present p:nth-child(5) {
+    margin: 0 1em;
+  }
+
+  #artist-img {
+    max-width: fit-content;
+  }
+
+  /* --------- footer ---------  */
+  footer {
+    align-items: center;
+    margin: 0 1em;
+    padding: 0 2em;
+  }
+
+  pre {
+    font-size: 1.1em;
+    line-height: 2em;
+    text-align: center;
+    padding: 0 2em;
+    white-space: pre-wrap;
+    width: 80vw;
+  }
+
+  #book {
+    max-width: 40vw;
+  }
 }
+
+// change everything according to hood CSS practice: alphabetical style
