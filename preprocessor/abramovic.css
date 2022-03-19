@@ -599,6 +599,14 @@ img {
 /* --------- medium desktop ---------  */
 /* --------- tablet ---------  */
 @media (max-width: 833px) {
+  .modal-img {
+    top: 35%;
+  }
+  .caption {
+    bottom: 25%;
+    text-transform: uppercase;
+    text-align: center;
+  }
   /* --------- GENERAL ---------  */
   h1 {
     font-size: 3.5em;
@@ -737,6 +745,16 @@ img {
 /* --------- mobile ---------  */
 @media (max-width: 427px) {
   /* --------- GENERAL ---------  */
+  .modal-img {
+    top: 35%;
+  }
+  .caption {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: black;
+    bottom: 40%;
+  }
   html,
   body {
     overflow-x: hidden;
