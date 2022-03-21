@@ -558,7 +558,109 @@ img {
 /* ------------------ MEDIA QUERIES ------------------  */
 
 /* --------- medium desktop ---------  */
-// min-width 833 - max-width 1100 px
+// min-width 833px - max-width 1100 px
+
+@media (min-width: 833px) and (max-width: 1100px) {
+  /* --------- GENERAL ---------  */
+
+  // modal
+
+  .modal-img {
+    top: 45%;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+
+  /* --------- early years ---------  */
+
+  .early-years {
+    margin: 0;
+  }
+
+  .early-years p:nth-child(2),
+  .jebeni-paragraf {
+    margin: unset;
+    padding: 0 1em 0 1em;
+  }
+
+  .jebeni-paragraf {
+    margin: 0 1em;
+    padding: 0 0 4em 0;
+  }
+
+  div.img-container.early {
+    padding: 3em 0;
+    margin-bottom: 1em;
+  }
+
+  /* --------- amsterdam-ulay ---------  */
+
+  .amsterdam-ulay {
+    padding: 0;
+    margin: 0;
+  }
+
+  .amsterdam-icon {
+    text-align: center;
+    padding-left: 1em;
+    margin: 1em 0 1.5em 1em;
+  }
+
+  #amsterdam-header {
+    padding-left: 0;
+    padding-right: 1em;
+  }
+
+  a.icon-header {
+    width: stretch;
+  }
+
+  #amsterdam-img {
+    max-width: 50vw;
+  }
+
+  /* --------- fame ---------  */
+
+  .fame {
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    margin: 1em 1em;
+  }
+
+  #fame-last {
+    margin: 0 1em;
+  }
+
+  /* --------- artist-present ---------  */
+
+  .artist-present {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* --------- footer ---------  */
+
+  footer {
+    align-items: center;
+    margin: 0 1em;
+    padding-bottom: 5em;
+  }
+
+  pre {
+    font-size: 1.3em;
+    padding-bottom: 3em;
+    max-height: 50%;
+  }
+
+  #book {
+    max-width: 70%;
+  }
+}
 
 /* --------- tablet ---------  */
 // iPad Pro 11'' 834 x 1194
@@ -933,3 +1035,4 @@ img {
 }
 
 // change everything according to hood CSS practice: alphabetical style
+// change font in modal to uppercase + thin

@@ -597,6 +597,87 @@ img {
 
 /* ------------------ MEDIA QUERIES ------------------  */
 /* --------- medium desktop ---------  */
+@media (min-width: 833px) and (max-width: 1100px) {
+  /* --------- GENERAL ---------  */
+  .modal-img {
+    top: 45%;
+  }
+  p {
+    font-size: 1.3em;
+  }
+  /* --------- early years ---------  */
+  .early-years {
+    margin: 0;
+  }
+  .early-years p:nth-child(2),
+  .jebeni-paragraf {
+    margin: unset;
+    padding: 0 1em 0 1em;
+  }
+  .jebeni-paragraf {
+    margin: 0 1em;
+    padding: 0 0 4em 0;
+  }
+  div.img-container.early {
+    padding: 3em 0;
+    margin-bottom: 1em;
+  }
+  /* --------- amsterdam-ulay ---------  */
+  .amsterdam-ulay {
+    padding: 0;
+    margin: 0;
+  }
+  .amsterdam-icon {
+    text-align: center;
+    padding-left: 1em;
+    margin: 1em 0 1.5em 1em;
+  }
+  #amsterdam-header {
+    padding-left: 0;
+    padding-right: 1em;
+  }
+  a.icon-header {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: stretch;
+  }
+  #amsterdam-img {
+    max-width: 50vw;
+  }
+  /* --------- fame ---------  */
+  .fame {
+    padding: 0;
+    margin: 0;
+  }
+  p {
+    margin: 1em 1em;
+  }
+  #fame-last {
+    margin: 0 1em;
+  }
+  /* --------- artist-present ---------  */
+  .artist-present {
+    margin: 0;
+    padding: 0;
+  }
+  /* --------- footer ---------  */
+  footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 1em;
+    padding-bottom: 5em;
+  }
+  pre {
+    font-size: 1.3em;
+    padding-bottom: 3em;
+    max-height: 50%;
+  }
+  #book {
+    max-width: 70%;
+  }
+}
+
 /* --------- tablet ---------  */
 @media (max-width: 833px) {
   .modal-img {
