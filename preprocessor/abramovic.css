@@ -841,11 +841,27 @@ img {
 }
 
 /* --------- between mobile & tablet ---------  */
+@media (min-width: 428px) and (max-width: 610px) {
+  .caption {
+    -webkit-transform: translate(-75%, -5%);
+            transform: translate(-75%, -5%);
+    font-size: 1.3em;
+  }
+  /* --------- GENERAL ---------  */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: 2.2em;
+  }
+}
+
 /* --------- mobile ---------  */
 @media (max-width: 427px) {
   /* --------- GENERAL ---------  */
   .modal-img {
-    top: 35%;
+    top: 30%;
   }
   .caption {
     font-size: 1.2em;
