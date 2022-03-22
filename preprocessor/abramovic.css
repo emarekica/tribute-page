@@ -840,6 +840,7 @@ img {
   }
 }
 
+/* --------- between mobile & tablet ---------  */
 /* --------- mobile ---------  */
 @media (max-width: 427px) {
   /* --------- GENERAL ---------  */
