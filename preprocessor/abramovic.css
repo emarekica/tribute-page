@@ -163,6 +163,9 @@ img.anchor-icon {
           box-shadow: none;
   margin: unset;
   max-width: 1.5em;
+  height: auto;
+  padding-right: 1em;
+  padding-top: 0.4em;
 }
 
 /* text */
@@ -568,7 +571,7 @@ img {
   position: absolute;
   height: auto;
   width: 150%;
-  top: 50%;
+  top: 43%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0.5);
           transform: translate(-50%, -50%) scale(0.5);
@@ -588,6 +591,9 @@ img {
   font-size: 1.5rem;
   font-family: Alegreya Sans, sans-serif;
   background-color: rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   position: absolute;
   bottom: 5%;
   left: 50%;
@@ -598,10 +604,10 @@ img {
 /* ------------------ MEDIA QUERIES ------------------  */
 /* --------- medium desktop ---------  */
 @media (min-width: 833px) and (max-width: 1100px) {
-  /* --------- GENERAL ---------  */
   .modal-img {
     top: 45%;
   }
+  /* --------- GENERAL ---------  */
   p {
     font-size: 1.3em;
   }
@@ -619,13 +625,16 @@ img {
     padding: 0 0 4em 0;
   }
   div.img-container.early {
-    padding: 3em 0;
-    margin-bottom: 1em;
+    padding: 4em 0 0 0;
+    margin: 2em 0 2em 0;
+  }
+  #early-img {
+    margin-bottom: 1.3em;
   }
   /* --------- amsterdam-ulay ---------  */
   .amsterdam-ulay {
     padding: 0;
-    margin: 0;
+    margin: 2em 0 0 0;
   }
   .amsterdam-icon {
     text-align: center;
@@ -650,7 +659,10 @@ img {
     margin: 0;
   }
   p {
-    margin: 1em 1em;
+    margin: 2em 1em 1em 1em;
+  }
+  .fame p:last-child {
+    padding-bottom: 2em;
   }
   #fame-last {
     margin: 0 1em;
@@ -659,6 +671,12 @@ img {
   .artist-present {
     margin: 0;
     padding: 0;
+  }
+  .artist-present p:first-child {
+    margin-top: 2em;
+  }
+  .artist-present p:nth-child(2) {
+    padding-bottom: 2em;
   }
   /* --------- footer ---------  */
   footer {
@@ -822,7 +840,6 @@ img {
   }
 }
 
-/* --------- between mobile & tablet ---------  */
 /* --------- mobile ---------  */
 @media (max-width: 427px) {
   /* --------- GENERAL ---------  */
