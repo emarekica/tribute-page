@@ -839,7 +839,7 @@ img {
 //   margin: 8px;
 // }
 
-/* --------- between mobile & tablet ---------  */
+/* --------- mini tablet ---------  */
 
 @media (min-width: 428px) and (max-width: 610px) {
   // modal
@@ -857,6 +857,92 @@ img {
 
   h1 {
     font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1.7em;
+    line-height: 1.5em;
+  }
+
+  .icon-header {
+    margin-top: 2em;
+    margin-bottom: 0;
+  }
+
+  /* --------- early years ---------  */
+  .early-years {
+    margin: 0;
+  }
+
+  .early-years p:nth-child(2) {
+    padding-left: 0;
+  }
+
+  p.jebeni-paragraf {
+    padding: 0 2em 4em 2em;
+  }
+
+  /* --------- amsterdam-ulay ---------  */
+
+  .amsterdam-ulay {
+    margin: 1em;
+    padding: 0;
+  }
+
+  .amsterdam-ulay p:last-child {
+    text-align: center;
+  }
+
+  #amsterdam-last {
+    text-align: justify;
+  }
+
+  /* --------- fame ---------  */
+
+  .fame {
+    padding: 0;
+    margin: 0;
+  }
+
+  div.icon-header.fame-icon {
+    margin-top: 2em;
+    padding: 0 1.5em 1em 1em;
+  }
+
+  .fame p:last-child {
+    text-align: center;
+    padding-bottom: 2em;
+  }
+
+  #fame-last {
+    text-align: justify;
+  }
+
+  /* --------- artist-present ---------  */
+
+  .artist-present {
+    padding: 0 0.5em;
+  }
+
+  p.img-caption.artist {
+    text-align: center;
+    padding-bottom: 1.5em;
+  }
+
+  .artist-present p:nth-child(5) {
+    margin-left: 0;
+  }
+
+  /* --------- footer ---------  */
+
+  pre {
+    align-self: center;
+    font-size: 1.2em;
+    line-height: 2em;
+    text-align: center;
+    padding: 0 1em;
+    white-space: pre-wrap;
+    width: 80vw;
   }
 }
 
