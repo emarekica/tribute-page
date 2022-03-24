@@ -205,6 +205,7 @@ p {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: unset;
+  text-align: center;
 }
 
 .icon-header {
@@ -581,8 +582,8 @@ img {
 
 /* when clicked */
 .modal-img.open {
-  -webkit-transform: translate(-50%, -50%) scale(1.5);
-          transform: translate(-50%, -50%) scale(1.5);
+  -webkit-transform: translate(-50%, -50%) scale(0.7);
+          transform: translate(-50%, -50%) scale(0.7);
 }
 
 /* ---------- txt ---------- */
@@ -595,7 +596,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
   left: 50%;
   -webkit-transform: translate(-50%, -5%);
           transform: translate(-50%, -5%);
@@ -702,9 +703,10 @@ img {
     top: 35%;
   }
   .caption {
-    bottom: 25%;
+    bottom: 15%;
     text-transform: uppercase;
     text-align: center;
+    margin-left: 1em;
   }
   /* --------- GENERAL ---------  */
   h1 {
@@ -783,6 +785,9 @@ img {
   .fame p:last-child {
     padding-bottom: 4em;
   }
+  #fame-last {
+    margin: 0 1em;
+  }
   /* --------- artist-present ---------  */
   .artist-present p:first-child {
     margin-top: 0;
@@ -843,9 +848,10 @@ img {
 /* --------- mini tablet ---------  */
 @media (min-width: 428px) and (max-width: 610px) {
   .caption {
-    -webkit-transform: translate(-75%, -5%);
-            transform: translate(-75%, -5%);
     font-size: 1.3em;
+    margin: 0;
+    -webkit-transform: translate(-50%, -20%);
+            transform: translate(-50%, -20%);
   }
   /* --------- GENERAL ---------  */
   html,

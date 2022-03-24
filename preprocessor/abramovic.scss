@@ -17,6 +17,7 @@ $main-font-sans: Alegreya Sans, sans-serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: unset;
+  text-align: center;
 }
 
 @mixin grid-2-columns {
@@ -541,7 +542,7 @@ img {
 
 /* when clicked */
 .modal-img.open {
-  transform: translate(-50%, -50%) scale(1.5);
+  transform: translate(-50%, -50%) scale(0.7);
 }
 
 /* ---------- txt ---------- */
@@ -556,7 +557,7 @@ img {
   letter-spacing: 0.1em;
 
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
   left: 50%;
   transform: translate(-50%, -5%);
 }
@@ -571,6 +572,11 @@ img {
 
   .modal-img {
     top: 45%;
+  }
+
+  .caption {
+    bottom: 10%;
+    margin: 0;
   }
 
   /* --------- GENERAL ---------  */
@@ -694,9 +700,10 @@ img {
   }
 
   .caption {
-    bottom: 25%;
+    bottom: 15%;
     text-transform: uppercase;
     text-align: center;
+    margin-left: 1em;
   }
 
   /* --------- GENERAL ---------  */
@@ -786,6 +793,10 @@ img {
     padding-bottom: 4em;
   }
 
+  #fame-last {
+    margin: 0 1em;
+  }
+
   /* --------- artist-present ---------  */
 
   .artist-present p:first-child {
@@ -845,8 +856,10 @@ img {
   // modal
 
   .caption {
-    transform: translate(-75%, -5%);
     font-size: 1.3em;
+
+    margin: 0;
+    transform: translate(-50%, -20%);
   }
 
   /* --------- GENERAL ---------  */
@@ -966,7 +979,8 @@ img {
 
     background-color: black;
 
-    bottom: 40%;
+    bottom: 30%;
+    margin: 0;
   }
 
   // removes horizontal scrollbars
