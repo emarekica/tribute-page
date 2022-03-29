@@ -163,10 +163,16 @@ table {
 
 /* MBP 16': 1728 x 1112px */
 
+td:empty,
+th:empty {
+  visibility: hidden;
+}
+
 body {
   background-image: url("../img/chalk-double.jpg");
   background-repeat: repeat-y;
   background-size: 100%;
+  background-attachment: scroll;
 
   font-family: $main-font;
   color: white;
