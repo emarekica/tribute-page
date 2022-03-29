@@ -119,10 +119,16 @@ table {
 
 /* --------- GENERAL ---------  */
 /* MBP 16': 1728 x 1112px */
+td:empty,
+th:empty {
+  visibility: hidden;
+}
+
 body {
-  background-image: url("../img/chalk-double.jpg");
+  background-image: url("../img/chalk-double-sm.jpg");
   background-repeat: repeat-y;
   background-size: 100%;
+  background-attachment: scroll;
   font-family: Alegreya, serif;
   color: white;
   line-height: 2.2em;
@@ -608,6 +614,10 @@ img {
   .modal-img {
     top: 45%;
   }
+  .caption {
+    bottom: 10%;
+    margin: 0;
+  }
   /* --------- GENERAL ---------  */
   p {
     font-size: 1.3em;
@@ -938,11 +948,13 @@ img {
     top: 30%;
   }
   .caption {
-    font-size: 1.2em;
     text-transform: uppercase;
     text-align: center;
     background-color: black;
-    bottom: 40%;
+    bottom: 25%;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    font-size: 1.1em;
   }
   html,
   body {

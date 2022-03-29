@@ -979,14 +979,15 @@ img {
     top: 30%;
   }
   .caption {
-    font-size: 1.2em;
     text-transform: uppercase;
     text-align: center;
 
     background-color: black;
 
-    bottom: 30%;
-    margin: 0;
+    bottom: 25%;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    font-size: 1.1em;
   }
 
   // removes horizontal scrollbars
