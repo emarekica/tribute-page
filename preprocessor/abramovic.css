@@ -606,6 +606,8 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -5%);
           transform: translate(-50%, -5%);
+  padding: 1em 2em;
+  border-radius: 0.5em;
 }
 
 /* ------------------ MEDIA QUERIES ------------------  */
@@ -617,6 +619,8 @@ img {
   .caption {
     bottom: 10%;
     margin: 0;
+    padding: 1em 2em;
+    border-radius: 0.5em;
   }
   /* --------- GENERAL ---------  */
   p {
@@ -717,6 +721,8 @@ img {
     text-transform: uppercase;
     text-align: center;
     margin-left: 1em;
+    padding: 1em 2em;
+    border-radius: 0.5em;
   }
   /* --------- GENERAL ---------  */
   h1 {
@@ -862,6 +868,8 @@ img {
     margin: 0;
     -webkit-transform: translate(-50%, -20%);
             transform: translate(-50%, -20%);
+    padding: 1em 2em;
+    border-radius: 0.5em;
   }
   /* --------- GENERAL ---------  */
   html,
@@ -952,9 +960,9 @@ img {
     text-align: center;
     background-color: black;
     bottom: 25%;
+    font-size: 1.1em;
     padding: 1em 2em;
     border-radius: 0.5em;
-    font-size: 1.1em;
   }
   html,
   body {

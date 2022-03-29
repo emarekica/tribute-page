@@ -45,6 +45,11 @@ $main-font-sans: Alegreya Sans, sans-serif;
   margin: 0 2em;
 }
 
+@mixin modal-caption {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+}
+
 /* ------------------ CSS reset -----------------  */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -566,6 +571,8 @@ img {
   bottom: 2%;
   left: 50%;
   transform: translate(-50%, -5%);
+
+  @include modal-caption();
 }
 
 /* ------------------ MEDIA QUERIES ------------------  */
@@ -583,6 +590,8 @@ img {
   .caption {
     bottom: 10%;
     margin: 0;
+
+    @include modal-caption();
   }
 
   /* --------- GENERAL ---------  */
@@ -710,6 +719,8 @@ img {
     text-transform: uppercase;
     text-align: center;
     margin-left: 1em;
+
+    @include modal-caption();
   }
 
   /* --------- GENERAL ---------  */
@@ -866,6 +877,8 @@ img {
 
     margin: 0;
     transform: translate(-50%, -20%);
+
+    @include modal-caption();
   }
 
   /* --------- GENERAL ---------  */
@@ -981,13 +994,12 @@ img {
   .caption {
     text-transform: uppercase;
     text-align: center;
-
     background-color: black;
 
     bottom: 25%;
-    padding: 1em 2em;
-    border-radius: 0.5em;
     font-size: 1.1em;
+
+    @include modal-caption();
   }
 
   // removes horizontal scrollbars
