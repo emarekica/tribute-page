@@ -12,7 +12,7 @@ This project is part of series of projects from Free Code Camp's [**Responsive W
 - HTML5
 - CSS3
 - CSS flex-box
-- CSS flex-grid
+- CSS grid
 - SCSS
 - Responsive web design principles
 - Applied accessibility
